@@ -1,0 +1,4 @@
+az aks get-credentials -g $resource_group_name -n $cluster_name
+az aks rotate-certs -g $resource_group_name -n $cluster_name --yes
+az aks show -g $resource_group_name -n $cluster_name
+az aks get-credentials -g $resource_group_name  -n $cluster_name --overwrite-existing
